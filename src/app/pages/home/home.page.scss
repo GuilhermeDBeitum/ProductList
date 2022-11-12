@@ -1,0 +1,21 @@
+.fancy-button {
+    --background: var(--charcoal, #1b74b0);
+}
+
+.line {
+    --background: var(--charcoal, #0e0e0e);
+}
+
+.btn {
+    margin: 30px;
+    font-size: 14px;
+    width: 100%;
+    height: 40%;
+    --background: var(--charcoal, #3169bf);
+}
+
+.input {
+    --color: var(--charcoal, #0e0e0e);
+    font-size: 10px;
+    width: 100%;
+}

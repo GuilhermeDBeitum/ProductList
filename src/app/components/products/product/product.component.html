@@ -1,0 +1,29 @@
+<ion-list lines="full">
+
+  <ion-content [fullscreen]="true">
+
+  </ion-content>
+
+  <ion-item *ngIf="product">
+
+    <ion-label class="ion-text-wrap" [routerLink]="'/product/' + product.id">
+      <h2>
+        {{ product.name }}
+      </h2>
+    </ion-label>
+
+
+    <ion-label class="ion-text-wrap" [routerLink]="'/product/' + product.id">
+      <h2 class="qnt">
+        {{ product.quantity}}
+      </h2>
+    </ion-label>
+    <ion-item>
+      <app-alert-edit (click)="presentAlertEdit(product.id, product.name, product.quantity)"></app-alert-edit>
+      <app-alert-delete (click)="presentAlertDelete(product.id)"></app-alert-delete>
+    </ion-item>
+  </ion-item>
+
+  <app-toast></app-toast>
+
+</ion-list>
